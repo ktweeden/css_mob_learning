@@ -1,0 +1,44 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  position: fixed;
+  top: 0;
+}
+
+
+
+.container {
+  grid-template-rows: 1fr 1fr 1fr 3fr 12fr 12fr 9fr 9fr 6fr 6fr 6fr 6fr 1fr 3fr 1fr ;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas:
+  "primary_nav primary_nav primary_nav"
+  "secondary_nav secondary_nav secondary_nav"
+  "secondary_offer secondary_offer secondary_offer"
+  "primary_offer primary_offer primary_offer"
+  "left_margin new_season right_margin"
+  "left_margin clothing_categories right_margin"
+  "left_margin style_feed right_margin"
+  "left_margin magazine right_margin"
+  "left_margin advert1 right_margin"
+  "left_margin advert2 right_margin"
+  "left_margin shop_by_category right_margin"
+  "left_margin mac_advert right_margin"
+  "social social social"
+  "footer footer footer"
+  "TCS TCS TCS";
+
+  grid-gap: 0;
+}
+
+.primary-nav {
+  grid-area: primary_nav;
+  background-color: rgb(69, 70, 74);
+}
+
+.inline {
+  display: inline-block;
+}
