@@ -10,9 +10,13 @@ html, body {
 }
 
 
+/* Do we need grid? Could we just auto all the rows and then let the contents define the heights */
+
+
 
 .container {
-  grid-template-rows: 1fr 1fr 1fr 3fr 12fr 12fr 9fr 9fr 6fr 6fr 6fr 6fr 1fr 3fr 1fr ;
+  /* grid-template-rows: 1fr 1fr 1fr 3fr 12fr 12fr 9fr 9fr 6fr 6fr 6fr 6fr 1fr 3fr 1fr ; */
+  grid-template-rows: auto;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas:
   "primary_nav primary_nav primary_nav"
